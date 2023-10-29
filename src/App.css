@@ -1,0 +1,36 @@
+.App {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 2rem 5rem;
+  width: 60%;
+}
+
+.holder {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.holder label {
+  width: 100%;
+  text-align: left;
+}
+.holder input {
+  width: 100%;
+}
+
+button {
+  padding: 0.5rem;
+}
