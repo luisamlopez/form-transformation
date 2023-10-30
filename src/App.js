@@ -98,7 +98,10 @@ function App() {
             Zoho URL
           </label>
           <input type='text' name='url' value={url} onChange={(e) => {
-            setURL(e.target.value)
+            // Transform the URL and only get the text before the ? 
+            var parts = e.target.value.split("?");
+            var textBeforeQuestionMark = parts[0];
+            setURL(textBeforeQuestionMark);
           }}
             required />
         </div>
@@ -127,6 +130,9 @@ function App() {
           />
         </>
 
+      )}
+      {!applied && (
+        <iframe src="https://scribehow.com/embed/Copying_and_Pasting_Text_into_Google_Docs_with_Script__c02Rvg39SCW7L1XzQ9RNCA?as=scrollable" width="100%" height="640" allowfullscreen frameborder="0"></iframe>
       )}
     </div>
   );
