@@ -90,7 +90,7 @@ function App() {
   return (
     <div className="App">
       <h1>
-        Form Transformation
+        Form Builder
       </h1>
       <form method='POST'>
         <button onClick={restart}>
